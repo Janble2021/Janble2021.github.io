@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="SV">
+  <head>
+    
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PZTFX8G2G8"></script>
+<script>
+  if (localStorage.getItem("cookie_consent") != "true") {
+    // disable tracking
+    window['ga-disable-G-PZTFX8G2G8'] = true;
+    console.debug("Analytics disabled")
+  } 
+  
+  // enable tracking
+  else {
+    window['ga-disable-G-PZTFX8G2G8'] = false;
+    console.debug("Analytics enabled")
+  }
+
+  console.debug("Analytics active")
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PZTFX8G2G8');
+</script>
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="version" content="2021-07-22 21:36:09 +0000">
+    <meta name="description" content="Blogg om segling som utgår från Råå i Helsingborg">
+    <title>404 - bleckert.se</title>
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#1d4ed8">
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link href="/assets/icons/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet"> <!--load all styles -->
+
+  </head>
+  <body class="bg-gray-300" 
+  
+    onload="cookieBanner()"
+  
+  >
+    
+    <header class="bg-blue-900 p-2">
+    <div class="flex">
+        <a class="flex items-center transition-colors duration-300 ease-in-out text-blue-100 hover:text-blue-200" href="/">
+            <img class="bg-white w-8 md:w-12 p-1 rounded-md" src="/assets/img/B_logo_big.png" alt="">
+            <h1 class="px-2 text-base md:text-3xl">Segling@bleckert.se</h1>
+        </a>
+    </div>
+</header>
+    <div class="w-full max-w-xl mx-auto mt-10 p-4 bg-white">
+    <h1 class="text-4xl">404</h1>
+    <p class="text-xl">Sidan kunde inte hittas</p>
+    <a class="underline" href="/">Gå till hemsidan</a>
+</div>
+    <footer class="flex justify-center items-center w-full h-20 mt-10 border-t-2 border-yellow-500 bg-blue-800">
+    <div class="text-blue-100">Copyright © 2021. Bleckert Rights Reserved.</div>
+</footer>
+    <!-- scroll arrow -->
+    <button id="scroll_arrow" class="hidden fixed bottom-4 right-4 px-3 py-2 rounded-full shadow-lg bg-white" onclick="scrollToTop()">
+      <i class="fas fa-arrow-up text-3xl text-blue-700"></i>
+    </button>
+    <div id="cookie_banner" class="hidden items-center justify-between sticky bottom-0 bg-white p-4 border-t-2 border-yellow-500">
+        <i class="fas fa-cookie-bite text-yellow-600 fa-2x align-middle mr-3"></i>
+        <p class="text-sm md:text-base text-gray-700">
+            Denna sidan använder "Kakor" i syfte att få reda på antal besökare och annan statisikt för att förbättra webbplatsen.
+            <a class="underline text-blue-900" href="https://www.pts.se/cookies" target="_blank" rel="noopener">Läs mer om kakor</a>
+        </p>
+    <div class="flex">
+        <button class="ml-2 py-2 px-3 text-sm md:text-base text-blue-500 border-2 border-blue-500 bg-transparent rounded-md" onclick="allowCookies(false)">Neka</button>
+        <button class="ml-2 py-2 px-6 text-sm md:text-base text-white bg-blue-500 rounded-md" onclick="allowCookies(true)">Tillåt</button>
+    </div>
+</div>
+
+    <script async src="/assets/js/script.js"></script>
+  </body>
+</html>
